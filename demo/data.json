@@ -1,0 +1,27 @@
+[
+{
+	"src": "http://o9r9kpwmc.bkt.clouddn.com/worker/PHP.png",
+	"height": 160,
+	"width": 220,
+	"des": "一个在慕课网的实战项目，后端框架采用thinkphp，前端用到了jquery和bootstrap.",
+	"url": "http://jiangzhaojin.p.imooc.io",
+	"code": "https://github.com/JiangZhaojin/Website-Of-NBA-News"
+},
+
+{
+	"src": "http://o9r9kpwmc.bkt.clouddn.com/worker/H5APP.png",
+	"height": 160,
+	"width": 220,
+	"des": "一个移动端webApp。采用了组件形式开发，拓展性强",
+	"url": "http://jiangzhaojin.com/H5App-Report/",
+	"code": "https://github.com/JiangZhaojin/H5App-Report"
+},
+{
+	"src": "http://o9r9kpwmc.bkt.clouddn.com/worker/some-practice/scroll.png",
+	"height": 160,
+	"width": 220,
+	"des": "采用了闭包方法编写的一个自定义滚动条插件，有良好的封装，并处理了滚轮事件的兼容性问题",
+	"url": "https://zebrass.github.io/Some-practice/jQuery-scroll/",
+	"code": "https://github.com/JiangZhaojin/Some-practice/tree/master/jQuery-scroll/"
+}
+]

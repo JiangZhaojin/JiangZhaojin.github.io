@@ -1,0 +1,23 @@
+# Site settings
+title: 'JZJ'  # Your Title
+tagline: 'to be youself'  # A brief tagline for your site
+sidebar_image: /images/cover.jpg
+
+encoding: UTF-8
+markdown: kramdown
+
+paginate: 8
+paginate_path: "page:num"
+
+#pygments: true
+baseurl: ""
+
+
+# Site settings
+name:           JiangZhaojin
+email:          jiang.zhaojin@foxmail.com
+uri:            JiangZhaojin.github.io
+github:         JiangZhaojin
+twitter:        JiangZhaojin
+facebook:       JiangZhaojin
+linkedin:       JiangZhaojin
