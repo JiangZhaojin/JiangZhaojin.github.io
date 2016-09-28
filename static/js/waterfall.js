@@ -2,12 +2,10 @@
 var waterfall = function(){
     //首先是对demo结构进行操作
     if($(window).width() <= 1024 && $(window).width() > 767){
-        $(".element").eq(3).remove();
+         
     }else if($(window).width() <= 767 && $(window).width() > 540){
-        $(".element").eq(3).remove();
         $(".element").eq(2).remove();
     }else if($(window).width() <= 540 ){
-        $(".element").eq(3).remove();
         $(".element").eq(2).remove();
         $(".element").eq(1).remove();
     }
@@ -23,16 +21,22 @@ var waterfall = function(){
                 image.css({"width":"214px","height":data[i].height * ( 214 / data[i].width ) + 'px'})
             }
             child.append( image );
+            if (data.skill) {
+                for (var i = 0; i < data.skill.length; i++) {
+                    child.append($('<span class="skill"></span>').text(data.skill[i]));
+                }
+            }
             var description = $("<p></p>");
             description.text(data[i].des);
-            var code = $("<a>[查看代码]</a>");
+            var code = $("<li><a>查看代码</a></li>");
             code.attr("href",data[i].code);
-            var link = $("<a>[查看演示]</a>");
+            var link = $("<li><a>查看演示</a></li>");
             link.attr("href",data[i].url);
 
-            description.append( code ); 
-            description.append( link );           
+            var ul_list = $("<ul></ul>");
+            ul_list.append(code).append(link); 
             child.append( description );
+            child.append( ul_list );           
             $(".element").eq(_index).append( child );
         }
 

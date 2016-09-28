@@ -13,7 +13,6 @@
 
     <!-- CSS -->                       
     <link rel="stylesheet" href="{{ site.baseurl }}/static/css/index.css">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,10 +26,28 @@
 
     {% include footer.html %}
     </div>
+    <div class="comment">
+        <span>Comments</span>
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="Zebrass.github.io{{ page.url}}"></div>
+        <!-- 多说评论框 end -->
+    </div>
 
     <script src="{{ site.url }}/static/js/jquery.min.js"></script>
     <script src="{{ site.url }}/static/js/index.js"></script>
     <script async type="text/javascript" src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"zebrass"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+    </script>
+     <!-- 多说公共JS代码 end -->
     
 </body>
 </html>

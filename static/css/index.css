@@ -66,11 +66,11 @@ body {
   height: 100%;
   background: #ffffff;
   color: #555555;
-  background: -webkit-linear-gradient(left, #9bd 10%, #e85 90%);
-  background: -moz-linear-gradient(90deg, #9bd 10%, #e85 90%);
-  background: -ms-linear-gradient(90deg, #9bd 10%, #e85 90%);
-  background: -o-linear-gradient(90deg, #9bd 10%, #e85 90%);
-  background: linear-gradient(90deg, #9bd 10%, #e85 90%); }
+  background: -webkit-linear-gradient(left, #9bd 10%, #afa 90%);
+  background: -moz-linear-gradient(90deg, #9bd 10%, #afa 90%);
+  background: -ms-linear-gradient(90deg, #9bd 10%, #afa 90%);
+  background: -o-linear-gradient(90deg, #9bd 10%, #afa 90%);
+  background: linear-gradient(90deg, #9bd 10%, #afa 90%); }
 
 .wrap {
   margin: 0 auto;
@@ -162,7 +162,7 @@ body {
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
       .cssmenu li a:hover {
-        background-color: #FF61A0;
+        background-color: #62AA7D;
         color: #ffffff; }
       @media only screen and (max-width: 1024px) {
         .cssmenu li a {
@@ -429,8 +429,8 @@ body {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear; }
   .posts li:hover {
-    padding-left: 30px;
-    border-left: 15px solid #88AAEE;
+    padding-left: 25px;
+    border-left: 15px solid #55AAEE;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
@@ -482,7 +482,7 @@ body {
     transition: all 0.3s linear;
     cursor: pointer; }
     .category li:hover {
-      background-color: #5BB585;
+      background-color: #99BBDD;
       color: #FFF; }
       .category li:hover span {
         color: #FFF; }
@@ -494,7 +494,7 @@ body {
       line-height: 1.3em;
       text-align: center;
       border-radius: 11px;
-      background-color: #5BB585;
+      background-color: #99BBDD;
       color: #FFF; }
   @media only screen and (max-width: 1024px) {
     .category {
@@ -510,7 +510,8 @@ body {
   .post-content .post-date {
     text-align: center; }
   .post-content img {
-    max-width: 100%; }
+    max-width: 90%;
+    display: block; }
   .post-content p {
     font-size: 16px;
     line-height: 2;
@@ -522,11 +523,10 @@ body {
   .post-content hr {
     height: 1px;
     border: none;
-    border-top: 1px solid #ddd;
-    width: 80%; }
+    border-top: 1px solid #ccc;
+    width: 100%; }
   .post-content h3 {
-    line-height: 50px;
-    margin-top: 30px; }
+    line-height: 30px; }
   .post-content a {
     color: #8B1A1A; }
   .post-content blockquote {
@@ -746,7 +746,7 @@ body {
   .demo .element {
     width: 236px;
     float: left;
-    margin-right: 10px; }
+    margin-right: 20px; }
     @media only screen and (max-width: 1024px) {
       .demo .element {
         width: 32%; } }
@@ -758,14 +758,24 @@ body {
         width: 100%; } }
     .demo .element div {
       display: inline-block;
-      border-radius: 5px;
       border: 2px solid #eee;
       background: #eee;
-      box-shadow: 0px 0px 5px #eee;
-      padding: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       cursor: pointer;
       transition: all 0.3s ease-in-out; }
+      .demo .element div ul {
+        margin: 8px auto; }
+        .demo .element div ul li {
+          padding: 4px;
+          margin: 4px 8px;
+          background-color: #01BE98;
+          border-radius: 4px; }
+          .demo .element div ul li a {
+            color: #fff; }
+      .demo .element div .skill {
+        background-color: #00C39C;
+        border-radius: 5px;
+        margin: 4px 8px; }
       .demo .element div img {
         width: 214px;
         display: block; }
@@ -774,15 +784,16 @@ body {
             width: 100%; } }
       .demo .element div p {
         font-size: 1em;
-        padding-top: 10px;
+        padding: 10px;
         white-space: pre-wrap;
         word-wrap: break-word;
-        word-break: break-all; }
+        word-break: break-all;
+        line-height: 1.5;
+        text-indent: 28px; }
         .demo .element div p a {
           color: #FF6347; }
       .demo .element div:hover {
         transform: scale(1.04);
         -webkit-transform: scale(1.04);
         -o-transform: scale(1.04);
-        -moz-transform: scale(1.04);
-        box-shadow: 0px 2px 5px #000; }
+        -moz-transform: scale(1.04); }

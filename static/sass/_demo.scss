@@ -32,7 +32,7 @@
     .element { 
         width: 236px; 
         float: left;
-        margin-right: 10px;
+        margin-right: 20px;
         @media only screen and (max-width: 1024px) {
             width: 32%;
         }
@@ -46,14 +46,30 @@
 
         div {
             display:inline-block;
-            border-radius: 5px;
             border: 2px solid #eee;
             background: #eee;
-            box-shadow: 0px 0px 5px #eee; 
-            padding: 10px; 
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             cursor: pointer;
             transition:all 0.3s ease-in-out;
+
+            ul {
+                margin:8px auto;
+                li {
+                    padding:4px;
+                    margin:4px 8px;
+                    background-color:#01BE98;
+                    border-radius:4px;
+                    a {
+                        color:#fff;
+                    }
+                }
+            }
+
+            .skill {
+                background-color: #00C39C;
+                border-radius: 5px;
+                margin: 4px 8px;
+            }
             
 
             img {
@@ -66,10 +82,12 @@
 
             p{ 
                 font-size: 1em;
-                padding-top:10px;
+                padding:10px;
                 white-space: pre-wrap; 
                 word-wrap:break-word; 
                 word-break:break-all;
+                line-height:1.5;
+                text-indent:28px;
 
                 a{
                     color:#FF6347;
@@ -81,7 +99,6 @@
                 -webkit-transform:scale(1.04);
                 -o-transform:scale(1.04);
                 -moz-transform:scale(1.04);
-                box-shadow: 0px 2px 5px #000;
             }
         }
 
