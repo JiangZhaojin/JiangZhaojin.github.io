@@ -38,8 +38,7 @@
 
         &:hover {
             padding-left: 30px;
-            border-left: 15px solid #CE2323;
-
+            border-left: 15px solid #88AAEE;
             @include transition(all .3s linear);
         }
 
@@ -103,7 +102,7 @@
         cursor: pointer;
 
         &:hover{ 
-            background-color: #CE2323;
+            background-color: #5BB585;
             color: #FFF;
 
             span{
@@ -119,7 +118,7 @@
             line-height: 1.3em;
             text-align: center;
             border-radius: 11px;
-            background-color: #CE2323;
+            background-color: #5BB585;
             color: #FFF;
         } 
     }
