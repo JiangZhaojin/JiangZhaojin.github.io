@@ -18,13 +18,14 @@ var waterfall = function(){
             var image = $('<img/>');
             image.attr("src",data[i].src);
             if(window.innerWidth >= 768){
-                image.css({"width":"214px","height":data[i].height * ( 214 / data[i].width ) + 'px'})
+                image.css({"width":"234px","height":data[i].height * ( 214 / data[i].width ) + 'px'})
             }
             child.append( image );
-            if (data.skill) {
-                for (var i = 0; i < data.skill.length; i++) {
-                    child.append($('<span class="skill"></span>').text(data.skill[i]));
+            if (data[i].skill) {
+                for (var j = 0; j < data[i].skill.length; j++) {
+                    child.append($('<span class="skill"></span>').text(data[i].skill[j]));
                 }
+                child.append($('<br>');
             }
             var description = $("<p></p>");
             description.text(data[i].des);

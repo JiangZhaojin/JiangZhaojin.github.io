@@ -19,10 +19,10 @@ $(document).ready(function(){
 /*分类目录菜单点击效果*/   
 (function(){
     $(".cates").hide();
-    $(".category-list li:first-child").css({"background-color": "#CE2323","color":"#FFFFFF"});
+    $(".category-list li:first-child").css({"background-color": "#99BBDD","color":"#FFFFFF"});
     $(".category-list li")
     $(".category-list li").bind("click",function(){
-        $(this).css({"background-color": "#CE2323","color":"#FFFFFF"}).siblings().css({"background-color":"transparent","color":"#000000"});
+        $(this).css({"background-color": "#99BBDD","color":"#FFFFFF"}).siblings().css({"background-color":"transparent","color":"#000000"});
         var cateName = $(this).attr("data-cate");
         $(".cate-posts > ul[data-cate != "+cateName+"]").hide(280);
         $(".cate-posts > ul[data-cate = "+cateName+"]").show(400);

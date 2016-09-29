@@ -34,10 +34,10 @@
         background-color: rgba(7,139,69,0.6);
         padding:4px 40px;
         border-radius: 6px;
+        border-left: 15px solid #5BB387;
         @include transition(all .3s linear);
 
         &:hover {
-            padding-left: 25px;
             border-left: 15px solid #55AAEE;
             @include transition(all .3s linear);
         }
@@ -102,8 +102,8 @@
         cursor: pointer;
 
         &:hover{ 
-            background-color: #99BBDD;
-            color: #FFF;
+            background-color: #99BBDD!important;
+            color: #FFF!important;
 
             span{
                 color: #FFF;

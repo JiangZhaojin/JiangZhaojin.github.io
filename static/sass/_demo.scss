@@ -3,6 +3,7 @@
     //min-height:110vh;
     margin: 60px auto 0;
     padding:20px 0; 
+    text-align:center;
     @media only screen and (max-width: 1024px){
         width:98%;
         position:absolute;
@@ -31,7 +32,7 @@
     }
     .element { 
         width: 236px; 
-        float: left;
+        display:inline-flex;
         margin-right: 20px;
         @media only screen and (max-width: 1024px) {
             width: 32%;
@@ -48,17 +49,20 @@
             display:inline-block;
             border: 2px solid #eee;
             background: #eee;
+            text-align:left;
             margin-bottom: 20px;
             cursor: pointer;
             transition:all 0.3s ease-in-out;
 
             ul {
                 margin:8px auto;
+                text-align:center;
                 li {
-                    padding:4px;
-                    margin:4px 8px;
+                    padding:4px 20px;
+                    margin:4px;
                     background-color:#01BE98;
                     border-radius:4px;
+                    text-align:center;
                     a {
                         color:#fff;
                     }
