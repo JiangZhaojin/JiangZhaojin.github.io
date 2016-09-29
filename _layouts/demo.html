@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 
     <!-- CSS -->                       
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/index.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 </head>
 
 <body>
@@ -15,6 +15,13 @@
     <div class="wrap">          
     {% include header.html %}    
         {{ content }}
+
+        <div class="comment">
+            <span>Comments</span>
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="Zebrass.github.io{{ page.url}}"></div>
+            <!-- 多说评论框 end -->
+        </div>
     
         <!--回到顶部-->
         <a id="returnTop"></a>

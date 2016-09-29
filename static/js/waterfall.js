@@ -25,7 +25,7 @@ var waterfall = function(){
                 for (var j = 0; j < data[i].skill.length; j++) {
                     child.append($('<span class="skill"></span>').text(data[i].skill[j]));
                 }
-                child.append($('<br>');
+                child.append($('<br>'));
             }
             var description = $("<p></p>");
             description.text(data[i].des);
