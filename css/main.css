@@ -385,7 +385,7 @@ body {
 /*comment*/
 .comment {
   width: 90%;
-  margin: 0px auto; }
+  margin: 30px auto; }
   .comment span {
     display: inline-block;
     padding: 10px 0;
@@ -648,20 +648,21 @@ body {
 
 .about-me p {
   font-size: 16px;
-  line-height: 1.4; }
-  .about-me p a {
-    color: #99BBDD;
-    text-decoration: none; }
+  line-height: 2;
+  text-align: center; }
 
 .about-me li {
   line-height: 1.4; }
 
 /*demo*/
 .demo {
-  width: 1024px;
+  width: 850px;
+  height: inherit !important;
   margin: 60px auto 0;
-  padding: 20px 0;
-  text-align: center; }
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5); }
   @media only screen and (max-width: 1024px) {
     .demo {
       width: 98%;
@@ -724,7 +725,8 @@ body {
         background-color: #99BBDD;
         border-radius: 5px;
         margin: 4px 4px;
-        padding: 2px 8px; }
+        padding: 2px 8px;
+        font-size: 14px; }
       .demo .element div img {
         width: 214px;
         display: block; }

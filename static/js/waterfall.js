@@ -23,7 +23,7 @@ var waterfall = function(){
             child.append( image );
             if (data[i].skill) {
                 var skill_cont = $('<div></div>');
-                skill_cont.css('margin-top', '10px').css('margin-bottom', 0);
+                skill_cont.css('margin-top', '10px').css('margin-bottom', 0).css('width','100%').css('text-align','center');
                 for (var j = 0; j < data[i].skill.length; j++) {
                     skill_cont.append($('<span class="skill"></span>').text(data[i].skill[j]));
                 }

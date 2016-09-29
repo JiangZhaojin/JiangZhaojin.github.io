@@ -1,9 +1,12 @@
 .demo {
-    width: 1024px;
+    width: 850px;
+    height:inherit!important;
     //min-height:110vh;
     margin: 60px auto 0;
-    padding:20px 0; 
+    padding:20px; 
     text-align:center;
+    border-radius:10px;
+    background-color: rgba(255, 255, 255, 0.5);
     @media only screen and (max-width: 1024px){
         width:98%;
         position:absolute;
@@ -74,6 +77,7 @@
                 border-radius: 5px;
                 margin: 4px 4px;
                 padding: 2px 8px;
+                font-size:14px;
             }
             
 
