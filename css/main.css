@@ -533,7 +533,7 @@ body {
     color: #8B1A1A; }
   .post-content blockquote {
     background: rgba(112, 138, 153, 0.1) none repeat scroll 0 0;
-    border-left: 5px solid #d6dbdf;
+    border-left: 5px solid #c4c9cd;
     color: #444;
     margin: 0 0 20px;
     padding: 10px 20px; }
@@ -587,7 +587,7 @@ body {
 .catalog-menu {
   position: absolute;
   top: 0;
-  right: -260px;
+  right: -270px;
   width: 250px;
   display: inline-block;
   border-radius: 6px;
@@ -721,9 +721,10 @@ body {
           .demo .element div ul li a {
             color: #fff; }
       .demo .element div .skill {
-        background-color: #00C39C;
+        background-color: #99BBDD;
         border-radius: 5px;
-        margin: 4px 8px; }
+        margin: 4px 4px;
+        padding: 2px 8px; }
       .demo .element div img {
         width: 214px;
         display: block; }

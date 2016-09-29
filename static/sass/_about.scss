@@ -11,11 +11,11 @@
 
     p{
         font-size: 16px;
-        line-height: 1.4;
-
-        a{
-            color:#99BBDD;
-            text-decoration: none;
+        line-height: 2;
+        margin: 10px 0;
+        text-indent: 32px;
+        @media only screen and (max-width: 768px) {
+            font-size: 16px;
         }
     }
     li {

@@ -22,10 +22,13 @@ var waterfall = function(){
             }
             child.append( image );
             if (data[i].skill) {
+                var skill_cont = $('<div></div>');
+                skill_cont.css('margin-top', '10px').css('margin-bottom', 0);
                 for (var j = 0; j < data[i].skill.length; j++) {
-                    child.append($('<span class="skill"></span>').text(data[i].skill[j]));
+                    skill_cont.append($('<span class="skill"></span>').text(data[i].skill[j]));
                 }
-                child.append($('<br>'));
+                skill_cont.append($('<br>'));
+                child.append(skill_cont);
             }
             var description = $("<p></p>");
             description.text(data[i].des);

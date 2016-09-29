@@ -1,9 +1,10 @@
 .demo {
-    width: 1024px;
+    max-width: 850px;
     //min-height:110vh;
-    margin: 60px auto 0;
-    padding:20px 0; 
+    margin: 60px auto;
+    padding:20px; 
     text-align:center;
+    border-radius:10px;
     @media only screen and (max-width: 1024px){
         width:98%;
         position:absolute;
@@ -33,7 +34,7 @@
     .element { 
         width: 236px; 
         display:inline-flex;
-        margin-right: 20px;
+        margin: 20px;
         @media only screen and (max-width: 1024px) {
             width: 32%;
         }
