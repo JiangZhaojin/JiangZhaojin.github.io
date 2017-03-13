@@ -74,7 +74,7 @@ ga_domain: jiangzhaojin.com
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "告诉你吧，世界 <br>我-不-相-信 "
-sidebar-avatar: /img/avatar-Jokin1.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-Jokin1.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
