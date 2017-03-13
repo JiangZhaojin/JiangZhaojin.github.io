@@ -1,27 +1,42 @@
 ---
-layout: home 
----      
+layout: page
+description: "一生想做浪漫极客"
+---
 
-<div class="home">
-    <div class="banner">
-        <div class="banner-text">
-            <h1 class="headline">《 秋 》</h1>
-            <h4>
-            用我们横陈于地上的骸骨<br>
-            在沙滩上写下：青春。然后背起衰老的父亲<br>
-            时日漫长 方向中断<br>
-            动物般的恐惧充塞我们的诗歌<br><br>
-            谁的声音能抵达秋之子夜 长久喧响<br>
-            掩盖我们横陈于地上的骸骨————<br>
-            秋已来临<br>
-            没有丝毫的宽恕和温情： 秋已来临<br>
-            </h4>
-        </div>    
-        <ul class="social">
-            <li><a href="https://github.com/{{ site.name }}"><i class="fa fa-github"></i></a></li>
-            <li><a href="http://weibo.com/u/5052056270"><i class="fa fa-weibo"></i></a></li>
-            <li><a href="mailto:jiang.zhaojin@foxmail.com"><i class="fa fa-envelope-o"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-        </ul>
-    </div>              
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 </div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
