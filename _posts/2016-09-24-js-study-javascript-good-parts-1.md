@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "蝴蝶书学习笔记:语法、对象、函数"
+title:  "JS笔记：蝴蝶书小结"
 date:   2016-09-08
 author: "Jokin"
 catalog: true
 header-img: "img/post-bg-digital-native.jpg"
 tags:
     - Javascript
-    - 学习笔记
+    - 笔记
 ---
 
 这几天对蝴蝶书进行了学习，对比于javascript权威指南的厚厚1000页，这本书真是单薄地令人惊讶。发现看一遍下来印象不是很深刻，遂做了个笔记，篇幅较长，但方便回顾。

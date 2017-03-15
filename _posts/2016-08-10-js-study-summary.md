@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JS学习笔记 : 阶段总结"
+title:  "JS笔记 : 阶段小结"
 subtitle: "进一寸有一寸的欢喜"
 date:   2016-08-10
 author: "Jokin"

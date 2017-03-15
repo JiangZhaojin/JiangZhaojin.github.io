@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "JS学习笔记：闭包"
+title:  "JS笔记：闭包"
 date:   2016-06-27
 author:     "Jokin"
 header-img: "img/post-bg-digital-native.jpg"
 catalog: true
 tags:
-    - 学习笔记
+    - 笔记
     - Javascript
 ---
 

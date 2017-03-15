@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Git学习小结"
+title:  "Git笔记：思维导图"
 date:   2016-08-01
 author: "Jokin"
 header-img: "img/post-bg-digital-native.jpg"
 tags:
-    - Git
     - 总结
+    - Git
 ---
 
 ## 感受

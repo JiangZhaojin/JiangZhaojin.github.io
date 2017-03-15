@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "JS学习笔记：面向对象"
+title:  "JS笔记：面向对象"
 date:   2016-06-29 15:24:55
 author: "Jokin"
 catalog: true
 header-img: "img/post-bg-digital-native.jpg"
 tags:
-    - 学习笔记
+    - 笔记
     - Javascript
 ---
 
