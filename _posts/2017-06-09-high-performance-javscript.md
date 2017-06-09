@@ -105,6 +105,7 @@ function multiSteps(taskArr, arg, callback) {
 
 - MXHR：打包服务端资源，使用一个http请求传送。
 - Beacons(信标)：性能消耗极其小
+
 ```js
 var url = "/status_tracker.php";
 var params = [
@@ -114,6 +115,7 @@ var params = [
 
 (new Image()).src = url + '?' + params.join('&');
 ```
+
 - 当数据集较大而且对解析时间有要求时：
     1. JSON-P数据，使用动态脚本注入获取。解析速度快，能跨域使用，但涉及敏感数据时不应当使用。
     2. 字符分隔的自定义模式，使用XHR或者动态脚本注入获取，用split()获取。
